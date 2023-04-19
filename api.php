@@ -1,5 +1,4 @@
 <?php
-//Author By Zlaxtert
 
 error_reporting(0);
 ini_set('display_errors', 0);
@@ -15,16 +14,16 @@ if($sk == ""){
 }
 
 /*===[CC Info Randomizer]=================*/
-$cc_info_arr[] = "4427323412042742|11|2022|778";
+$cc_info_arr[] = "4147202411104480|01|2024|919";
 $cc_info_arr[] = "4427323412047246|03|2025|056";
-$cc_info_arr[] = "4427325078084744|11|2023|720";
-$cc_info_arr[] = "4427323412486766|08|2024|555";
-$cc_info_arr[] = "4427323412172176|08|2022|776";
-$cc_info_arr[] = "4867320147781682|05|2022|237";
+$cc_info_arr[] = "5314620064182111|09|2028|405";
+$cc_info_arr[] = "6011209825580930|03|2028|434";
+$cc_info_arr[] = "4342562442889422|09|2026|217";
+$cc_info_arr[] = "4403935008537641|11|2029|942";
 $cc_info_arr[] = "4427323412680368|07|2025|788";
-$cc_info_arr[] = "4427323412367842|01|2025|124";
-$cc_info_arr[] = "4427325012730451|04|2025|227";
-$cc_info_arr[] = "4427325662058237|09|2023|708";
+$cc_info_arr[] = "4924960341663904|11|2023|348";
+$cc_info_arr[] = "4238161473838718|01|2026|458";
+$cc_info_arr[] = "4659022794169029|10|2025|336";
 $n = rand(0,9);
 $cc_info = $cc_info_arr[$n];
 
@@ -78,19 +77,19 @@ if(isset($res1['id'])){
 /*===[Response]=======================*/
 if(isset($res1['error'])){
     if (isset($res1['error']['type'])&&$res1['error']['type'] == 'invalid_request_error') {
-        echo '* <span class="label label-danger">DEAD </span> * <span class="label label-warning">./BlackNetID </span> * <span class="label label-primary"> Your Secret Key Is Dead</span> * <span class="label label-info">'.$sk.'</span> *';
+        echo '* <span class="label label-danger">DEAD </span> * <span class="label label-warning">./OshekharO </span> * <span class="label label-primary"> Your Secret Key Is Dead</span> * <span class="label label-info">'.$sk.'</span> *';
     }else{
-        echo '* <span class="label label-success">LIVE </span> * <span class="label label-info">./BlackNetID </span> * <span class="label label-warning"> Your Secret Key Is Active</span> * <span class="label label-primary">'.$sk.'</span> *';
+        echo '* <span class="label label-success">LIVE </span> * <span class="label label-info">./OshekharO </span> * <span class="label label-warning"> Your Secret Key Is Active</span> * <span class="label label-primary">'.$sk.'</span> *';
     }
 }else{
     if(isset($res2['error'])){
         if (isset($res2['error']['type'])&&$res2['error']['type'] == "invalid_request_error") {
             echo '* <span class="label label-danger">DEAD </span> * <span class="label label-primary"> Your Secret Key Is Dead</span> * <span class="label label-info">'.$sk.'</span> *';
         }else{
-            echo '* <span class="label label-success">LIVE </span> * <span class="label label-info">./BlackNetID </span> * <span class="label label-warning"> Your Secret Key Is Active</span> * <span class="label label-primary">'.$sk.'</span> *';
+            echo '* <span class="label label-success">LIVE </span> * <span class="label label-info">./OshekharO </span> * <span class="label label-warning"> Your Secret Key Is Active</span> * <span class="label label-primary">'.$sk.'</span> *';
         }
     }else{
-        echo '* <span class="label label-success">LIVE </span> * <span class="label label-info">./BlackNetID </span> * <span class="label label-warning"> Your Secret Key Is Active</span> * <span class="label label-primary">'.$sk.'</span> *';
+        echo '* <span class="label label-success">LIVE </span> * <span class="label label-info">./OshekharO </span> * <span class="label label-warning"> Your Secret Key Is Active</span> * <span class="label label-primary">'.$sk.'</span> *';
     }
 }
 
